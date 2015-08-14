@@ -5,8 +5,8 @@ ghc:
 notifications:
   email:
     recipients:
-      - coder@kyleisom.net
-      on_success: change
-      on_failure: change
+    - coder@kyleisom.net
+    on_success: change
+    on_failure: change
 
 
