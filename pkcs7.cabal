@@ -10,16 +10,31 @@ name:                pkcs7
 -- PVP summary:      +-+------- breaking API changes
 --                   | | +----- non-breaking API additions
 --                   | | | +--- code changes with no API change
-version:             1.0.0.0
+version:             1.0.0.1
 
 -- A short (one-line) description of the package.
 synopsis:            PKCS #7 padding in Haskell
 
 -- A longer description of the package.
 description:         Implements PKCS #7 padding.
+                     This implements the PKCS #7 padding scheme. This
+                     scheme is defined in <http://tools.ietf.org/html/rfc5652#section-6.3 RFC 5652, section 6.3>.
+
+                     Strings will be padded out to multiples of the block
+                     size; for example, a 5-byte string with an 8-byte
+                     block size will have three bytes of padding added. If
+                     the length is already a multiple of the block size,
+                     an entire block size worth of padding is added.
+
+                     The padding bytes are all set to the number of
+                     padding bytes. Returning to the previous example, the
+                     padding string would be three bytes of the byte 0x03.
+
+                     Unpadding checks the length and padding, and if
+                     this is valid, strips off the padding.
 
 -- URL for the project homepage or repository.
-homepage:            https://github.com/kisom/pkcs7-hs
+homepage:            https://github.com/kisom/pkcs7
 
 -- The license under which the package is released.
 license:             MIT

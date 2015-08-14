@@ -1,0 +1,12 @@
+language: haskell
+sudo: false
+ghc:
+	- 7.10
+notifications:
+  email:
+    recipients:
+      - coder@kyleisom.net
+      on_success: change
+      on_failure: change
+
+

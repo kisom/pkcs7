@@ -1,5 +1,7 @@
 # pkcs7
 
+[![Build Status](https://travis-ci.org/kisom/pkcs7.svg?branch=master)](https://travis-ci.org/kisom/pkcs7)
+
 This implements the PKCS #7 padding scheme. This scheme is
 defined in [RFC 5652, section 6.3](http://tools.ietf.org/html/rfc5652#section-6.3).
 
