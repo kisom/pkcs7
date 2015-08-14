@@ -1,7 +1,7 @@
 language: haskell
 sudo: false
 ghc:
-	- 7.10
+  - 7.10
 notifications:
   email:
     recipients:
